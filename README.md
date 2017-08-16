@@ -10,7 +10,7 @@ Seu objetivo é fazer deploy dessa aplicação na AWS. Você provavelmente preci
 
 * Você deve clonar esse repositório e commitar todas as modificações, porém, não abra um pull request ou deixe seu código de resposta aberto.
 * Depois que terminar, compacte todo o diretório e nos envie. *Queremos analisar seus commits*.
-* Você deverá partir de um ambiente na AWS sem nenhuma infraestrutura nenhuma.
+* Você deverá partir de um ambiente na AWS sem nenhuma infraestrutura já criada.
 * A aplicação deverá rodar em um containner docker.
 
 Sinta-se livre para mudar o código da aplicação se julgar necessário.
