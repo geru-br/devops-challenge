@@ -6,6 +6,8 @@ Basta executar `python app.py`. A porta está definida no código. A variável d
 
 ## Chamando a aplicação
 
-`curl -H "Authorization: Token VALOR_DA_ENVVAR_GEU_PASS" http://localhost/`
+```bash
+curl -H "Authorization: Token VALOR_DA_ENVVAR_GEU_PASS" http://localhost/
+```
 
-Lembre-se que você é livre para modificar essa aplicação.
+**Lembre-se que você é livre para modificar essa aplicação.**
