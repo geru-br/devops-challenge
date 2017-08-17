@@ -6,12 +6,12 @@ Esse é um teste feito para conhecer um  pouco mais de cada candidato a vaga de 
 
 ## Cenário
 
-Dentro do diretório `app` existe uma aplicação muito simples em Flask. Quando essa aplicação  subir ela irá ler uma variável de ambiente `GERU_PASS` que será a senha da api. Ou seja, ao executarmos uma chamada para essa aplicação devemos passar um `Header` de  `Authorization` com o token específico. Você deve nos informar como podemos definir/trocar esse token facilmente.
+Dentro do diretório `app` existe uma aplicação muito simples em Flask. Quando essa aplicação  subir ela irá ler uma variável de ambiente `GERU_PASS` que será a senha da api. Ou seja, ao executarmos uma chamada para essa aplicação devemos passar um `Header` de  `Authorization` com o token específico. Por exemplo: `curl -H "Authorization: Token VALOR_DA_ENVVAR_GEU_PASS" http://localhost/`. Você deve nos informar como podemos definir/trocar esse token facilmente.
 
-Seu objetivo é fazer deploy dessa aplicação na AWS. Você provavelmente precisará criar uma conta free-tier na AWS, ou utilizar uma sua já existente. Mas não se preocupe, não iremos olhar sua conta ou chamar sua aplicação já rodando, queremos que você crie uma forma de que possamos criar toda infraestrutura em nossa conta de forma simples. Você escolhe a forma. Crie um arquivo `part1.md` descrevendo todos os passos para que possamos executar sua infraestrutura em nosso ambiente. Esses são os pontos de atenção:
+Seu objetivo é fazer deploy dessa aplicação na AWS. Você provavelmente precisará criar uma conta free-tier na AWS, ou utilizar uma sua já existente. Mas não se preocupe, não iremos olhar sua conta ou chamar sua aplicação já rodando, queremos que você crie uma forma de que possamos recriar toda sua infraestrutura em nossa conta de forma simples. Você escolhe a forma. Crie um arquivo `part1.md` descrevendo todos os passos para que possamos executar sua infraestrutura em nosso ambiente. Esses são os pontos de atenção:
 
 * Você deverá partir de um ambiente na AWS sem nenhuma infraestrutura já criada.
-* A aplicação deverá rodar em um containner docker.
+* A aplicação deverá rodar em containner docker.
 
 Sinta-se livre para mudar o código da aplicação se julgar necessário.
 
