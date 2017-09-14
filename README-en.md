@@ -6,7 +6,7 @@ The purpose of this test is to know more about each candidate to our DevOps Engi
 
 ## Scenario
 
-Inside of the `app` directory there is a very simple Flask application. When this app will starts it will read an environment variable called `GERU_PASS` that will be the API password. Then, a call to the application needs a Header of Authorizationwith a specific token. Eg: `curl -H "Authorization: Token VALUE_OF_GERU_PASS_VAR " http://localhost/`. You should tell us how to define/change this token in an easy way.
+Inside of the `app` directory there is a very simple Flask application. When this app will starts it will read an environment variable called `GERU_PASS` that will be the API password. Then, a call to the application needs a `Header` of `Authorization` with a specific token. Eg: `curl -H "Authorization: Token VALUE_OF_GERU_PASS_VAR " http://localhost/`. You should tell us how to define/change this token in an easy way.
 
 Your goal is to deploy this application in AWS (Amazon Web Service). Probably, you'll need to create a free-tier AWS account, or use an already created account, but don't worry about it, we won't look at your account or call the application already running. We want that you show us how to recreate all this infrastructure in our account as simply as possible. Be creative. Create a part1.md file describing all the steps to deploy your stack in our environment. Be careful with the following points:
 
