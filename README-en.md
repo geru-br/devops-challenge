@@ -12,7 +12,8 @@ Your goal is to deploy this application in AWS (Amazon Web Service). Probably, y
 
 * You should start in a totally new AWS account.
 * This application need to be into a Docker container.
-* Feel free to change the code of the application if you need it.
+
+Feel free to change the code of the application if you need it.
 
 # Step 2
 
