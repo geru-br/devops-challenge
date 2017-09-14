@@ -27,7 +27,7 @@ Look at the following image, create a `part2.md` file with the technical desscri
 
 ![aws-test-scenario](https://user-images.githubusercontent.com/29125605/29424258-5d7d5c2a-8355-11e7-9701-2fb26621b6b0.png)
 
-# Ship it! 
+# Ship it! :shipit:
 
 * You should clone this repo and commit all your changes, but **don't** open a pull request or leave your code visible to the world just like in a fork.
 * When you finish it, compact all the directory and send it to us. **We wanna see your commits, don't forget the `.git`directory.**
