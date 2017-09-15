@@ -32,7 +32,7 @@ Look at the image below and create a `part2.md` file containing a technical desc
 # Ship it! :shipit:
 
 * You should clone this repo and commit all your changes, but **don't** open a pull request or leave your code visible to the world just like in a fork for example.
-* When you finish it, compact all the directory and send it to us. **We wanna see your commits, don't forget the `.git`directory.**
+* When you finish it, compact all the directory and send it to us. **We wanna see your commits, don't forget the `.git` directory.**
 * Send an email to devops`at`geru.com.br with your compacted file.
 
 Happy coding and good luck!
