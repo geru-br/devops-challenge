@@ -10,11 +10,10 @@ If any question comes up, please, let us know by sending an email to devops`at`g
 
 Inside of the `app` directory there is a very simple Flask application. When this app starts it will read an environment variable called `GERU_PASS` that will represent the API's password. Hence, a call to the application needs an `Authorization` `Header` containing a specific token. E.g.: `curl -H "Authorization: Token VALUE_OF_GERU_PASS_VAR " http://localhost/`. You should tell us how to modify this environment variable in an easy way.
 
-Your goal is to deploy this application in AWS (Amazon Web Service). Probably, you'll need to create a free-tier AWS account, or use an existing account, but don't worry about it, we won't look at your account or call the application already running.
-We want you to show us how to recreate all the infrastructure necessary to deploy this application in our account in the simplest way imaginable. You choose the way. Create a `part1.md` file describing all the steps needed to deploy your stack in our environment. Be careful with:
+Your goal is to deploy this application in AWS (Amazon Web Service). We want you to show us how to recreate all the infrastructure necessary to deploy this application in **our** account in the simplest way imaginable. You choose the way. Create a `part1.md` file describing all the steps needed to deploy your stack in our environment. Be careful with:
 
-* You should start in a totally new AWS account. ???
-* This application needs to be ??? a Docker container.
+* You should start in a totally new AWS account.
+* This application needs to be running in a Docker container.
 
 Feel free to modify the application code if needed.
 
