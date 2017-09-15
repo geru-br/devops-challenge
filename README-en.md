@@ -21,7 +21,7 @@ Feel free to modify the application code if needed.
 
 ## About this 'test'
 
-This test wants to understand your knowdlege about AWS. We want to know if you are familiar with AWS' range of products and how this cluster of offerings communicate with one another.
+This test aims at understanding your knowdlege about AWS. We want to know if you are familiar with AWS' range of products and how this cluster of offerings communicate with one another.
 
 ## Scenario
 
@@ -31,8 +31,8 @@ Look at the image below and create a `part2.md` file containing a technical desc
 
 # Ship it! :shipit:
 
-* You should clone this repo and commit all your changes, but **don't** open a pull request or leave your code visible to the world just like in a fork.
+* You should clone this repo and commit all your changes, but **don't** open a pull request or leave your code visible to the world just like in a fork for example.
 * When you finish it, compact all the directory and send it to us. **We wanna see your commits, don't forget the `.git`directory.**
 * Send an email to devops`at`geru.com.br with your compacted file.
 
-Happy coding!
+Happy coding and good luck!
