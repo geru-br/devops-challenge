@@ -27,6 +27,14 @@ Observando a imagem abaixo, crie um arquivo `part2.md` com a descrição técnic
 
 ![cenario-aws-teste](https://user-images.githubusercontent.com/29125605/29424258-5d7d5c2a-8355-11e7-9701-2fb26621b6b0.png)
 
+# Parte 3
+
+## Sobre o 'teste'
+
+Dentro do diretório `part3` você vai encontrar arquivos `YAML` que instrumentam como uma aplicação rodará em um cluster Kubernetes.
+Descreva o que você consegue entender sobre como a aplicação rodará e faça sugestões de melhorias, se você achar necessário.
+Obs: Atenção aos detalhes.
+
 # Entrega
 
 * Você deve clonar esse repositório e commitar todas as modificações, porém, não abra um pull request ou deixe seu código de resposta aberto em um fork, por exemplo.

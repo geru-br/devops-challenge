@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-app-web
+spec:
+  ports:
+  - name: web
+    port: 80
+    protocol: TCP
+    targetPort: 6543
+  selector:
+    name: demo-app-web
