@@ -27,6 +27,14 @@ Look at the following image, create a `part2.md` file with the technical descrip
 
 ![aws-test-scenario](https://user-images.githubusercontent.com/29125605/29424258-5d7d5c2a-8355-11e7-9701-2fb26621b6b0.png)
 
+# Parte 3
+
+## About this 'test'
+
+Inside the directory `part3` you'll find `YAML` files that describe how an application runs in a Kubernetes Cluster. 
+Describe what you can understand about how it runs and suggest improvements. 
+PS: Attention to the details, there are misconfigurations and bad practices.
+
 # Ship it! :shipit:
 
 * You should clone this repo and commit all your changes, but **don't** open a pull request or leave your code visible to the world just like in a fork for example.

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+  name: demo-app-ingress
+  namespace: demo-app
+spec:
+  rules:
+  - host: demo-app.teste.com.br
+    http:
+      paths:
+      - backend:
+          serviceName: demo-app-web
+          servicePort: 80
+        path: /

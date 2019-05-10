@@ -1,0 +1,86 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-web
+  annotations:
+    kubernetes.io/change-cause: Deploy - Version beta
+spec:
+  selector:
+    matchLabels:
+      name: demo-app-web
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxSurge: 2
+      maxUnavailable: 2
+  template:
+    metadata:
+      labels:
+        name: demo-app-web
+        version: beta
+    spec:
+      containers:
+      - env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SQLALCHEMY_URL
+          valueFrom:
+            secretKeyRef:
+              name: postgres
+              key: url
+        image: geru/demo-app:tag
+        imagePullPolicy: Always
+        livenessProbe:
+          failureThreshold: 30
+          httpGet:
+            path: /health
+            port: 6543
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 3
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /health
+            port: 6543
+            scheme: HTTP
+          initialDelaySeconds: 3
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 3
+        resources:
+          limits:
+            cpu: 1
+            memory: 2048Mi
+          requests:
+            cpu: 512m
+            memory: 200Mi
+        name: demo-app-web
+        ports:
+        - containerPort: 6543
+          protocol: TCP
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: beta.kubernetes.io/instance-type
+                operator: In
+                values:
+                - m5.xlarge
+                - m5.2xlarge
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "name"
+                    operator: In
+                    values:
+                    - demo-app
+              topologyKey: "kubernetes.io/hostname"
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: registry-credential
+      restartPolicy: Always
