@@ -9,4 +9,4 @@ spec:
     protocol: TCP
     targetPort: 6543
   selector:
-    name: demo-app-web
+    app: demo-app-web

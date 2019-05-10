@@ -32,8 +32,8 @@ Observando a imagem abaixo, crie um arquivo `part2.md` com a descrição técnic
 ## Sobre o 'teste'
 
 Dentro do diretório `part3` você vai encontrar arquivos `YAML` que instrumentam como uma aplicação rodará em um cluster Kubernetes.
-Descreva o que você consegue entender sobre como a aplicação rodará e faça sugestões de melhorias, se você achar necessário.
-Obs: Atenção aos detalhes.
+Descreva o que você consegue entender sobre como a aplicação rodará e faça sugestões de melhorias.
+Obs: Atenção aos detalhes, existem erros de configuração e praticas inadequadas.
 
 # Entrega
 

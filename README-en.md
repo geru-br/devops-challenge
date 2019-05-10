@@ -32,8 +32,8 @@ Look at the following image, create a `part2.md` file with the technical descrip
 ## About this 'test'
 
 Inside the directory `part3` you'll find `YAML` files that describe how an application runs in a Kubernetes Cluster. 
-Describe what you can understand about how it runs and suggest improvements if necessary. 
-PS: Attention to the details.
+Describe what you can understand about how it runs and suggest improvements. 
+PS: Attention to the details, there are misconfigurations and bad practices.
 
 # Ship it! :shipit:
 
